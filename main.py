@@ -4,7 +4,7 @@ from AgedBrie import AgedBrie
 from Sulfuras import Sulfuras
 from Dexterity import Dexterity
 from Elixir import Elixir
-from GildedRose import GilderRose
+from GildedRose import GildedRose
 from Conjured import Conjured
 from BackstagePass import BackstagePass
 
@@ -21,7 +21,7 @@ def main(passedDays):
     backstagePass2 = BackstagePass("Backstage Passes to TAFKAL80ETC concert", 5, 49)
 
     listaInventario = [agedBrie, sulfuras, sulfuras1, dexterity, elixirMongoose, conjuredManaCake, backstagePass, backstagePass1, backstagePass2]
-    tienda = GilderRose(listaInventario)
+    tienda = GildedRose(listaInventario)
     
     for day in range(1, passedDays+1):
         print('\n' + '---------- DAY ' + str(day) + ' ----------')

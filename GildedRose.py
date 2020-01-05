@@ -5,7 +5,7 @@ from Sulfuras import Sulfuras
 from Dexterity import Dexterity
 from Elixir import Elixir
 
-class GilderRose(NormalItem):
+class GildedRose(NormalItem):
 
     def __init__(self,  NormalItems):
         self.NormalItems = NormalItems
