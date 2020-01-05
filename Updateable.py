@@ -2,5 +2,5 @@
 
 class ItemInterface():
 
-    def updateable(self):
+    def updateQuality(self):
         pass

@@ -15,7 +15,7 @@ class Conjured(NormalItem):
             self.quality -= 4
 
 
-    def updateable(self):
+    def updateQuality(self):
         self.setsellIn()
         self.setQuality()
         self.checkQuality()

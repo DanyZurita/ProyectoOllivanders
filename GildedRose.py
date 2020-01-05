@@ -13,4 +13,4 @@ class GilderRose(NormalItem):
 
     def updateQuality(self):
         for itemClass in self.NormalItems:
-            itemClass.updateable()
+            itemClass.updateQuality()

@@ -9,7 +9,7 @@ class Sulfuras(NormalItem):
         self.quality = quality
 
 
-    def updateable(self):
+    def updateQuality(self):
         self.show()
 
 
