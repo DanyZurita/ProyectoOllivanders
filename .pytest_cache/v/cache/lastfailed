@@ -9,8 +9,5 @@
   "Lib/site-packages/sqlalchemy/testing/suite/test_sequence.py": true,
   "Lib/site-packages/sqlalchemy/testing/suite/test_types.py": true,
   "Lib/site-packages/sqlalchemy/testing/suite/test_update_delete.py": true,
-  "test_logica.py": true,
-  "test_logica.py::test_day_0": true,
-  "test_logica.py::test_day_1": true,
-  "test_logica.py::test_day_30": true
+  "test_logica.py": true
 }
