@@ -1,6 +1,7 @@
 from Item import Item
 from Updateable import ItemInterface
 
+
 class NormalItem(Item, ItemInterface):
 
     def __init__(self, name, sellIn, quality):
@@ -11,13 +12,11 @@ class NormalItem(Item, ItemInterface):
     def setsellIn(self):
         self.sellIn = self.sellIn - 1
 
-
     def checkQuality(self):
         if self.quality > 50:
             self.quality = 50
-        if  self.quality < 0:
+        if self.quality < 0:
             self.quality = 0
-
 
     def setQuality(self):
         if self.sellIn > 0:
@@ -25,16 +24,14 @@ class NormalItem(Item, ItemInterface):
         else:
             self.quality -= 2
 
-    def updateQuality(self):       
+    def updateQuality(self):
         self.setsellIn()
         self.setQuality()
         self.checkQuality()
         self.show()
 
-
     def show(self):
         print(self)
-
 
     def __repr__(self):
         return "%s, %s, %s" % (self.name, self.sellIn, self.quality)

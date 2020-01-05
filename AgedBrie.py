@@ -1,6 +1,7 @@
 from NormalItem import NormalItem
 from Updateable import ItemInterface
 
+
 class AgedBrie(NormalItem):
 
     def __init__(self, name, sellIn, quality):
@@ -13,7 +14,6 @@ class AgedBrie(NormalItem):
             self.quality += 1
         else:
             self.quality += 2
-
 
     def updateQuality(self):
         self.setsellIn()

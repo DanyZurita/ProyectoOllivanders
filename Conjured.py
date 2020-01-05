@@ -1,6 +1,7 @@
 from NormalItem import NormalItem
 from Updateable import ItemInterface
 
+
 class Conjured(NormalItem):
 
     def __init__(self, name, sellIn, quality):
@@ -13,7 +14,6 @@ class Conjured(NormalItem):
             self.quality -= 2
         else:
             self.quality -= 4
-
 
     def updateQuality(self):
         self.setsellIn()
