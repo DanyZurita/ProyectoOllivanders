@@ -1,5 +1,4 @@
 from NormalItem import NormalItem
-from Updateable import ItemInterface
 
 
 class Sulfuras(NormalItem):

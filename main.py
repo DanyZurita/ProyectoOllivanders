@@ -1,5 +1,3 @@
-from Item import Item
-from NormalItem import NormalItem
 from AgedBrie import AgedBrie
 from Sulfuras import Sulfuras
 from Dexterity import Dexterity
@@ -7,6 +5,7 @@ from Elixir import Elixir
 from GildedRose import GildedRose
 from Conjured import Conjured
 from BackstagePass import BackstagePass
+
 
 def main(passedDays):
 
