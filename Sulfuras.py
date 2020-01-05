@@ -10,4 +10,4 @@ class Sulfuras(NormalItem):
         self.quality = quality
 
     def updateQuality(self):
-        self.show()
+        pass

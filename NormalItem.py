@@ -28,7 +28,6 @@ class NormalItem(Item, ItemInterface):
         self.setSellIn()
         self.setQuality()
         self.checkQuality()
-        self.show()
 
     def show(self):
         print(self)

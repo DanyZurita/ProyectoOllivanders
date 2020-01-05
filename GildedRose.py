@@ -1,16 +1,14 @@
-from Item import Item
-from NormalItem import NormalItem
-from AgedBrie import AgedBrie
-from Sulfuras import Sulfuras
-from Dexterity import Dexterity
-from Elixir import Elixir
 
 
-class GildedRose(NormalItem):
+class GildedRose(object):
 
-    def __init__(self,  NormalItems):
-        self.NormalItems = NormalItems
+    def __init__(self,  items):
+        self.NormalItems = items
 
     def updateQuality(self):
         for itemClass in self.NormalItems:
             itemClass.updateQuality()
+    
+    def show(self):
+        for itemClass in self.NormalItems:
+            itemClass.show()
