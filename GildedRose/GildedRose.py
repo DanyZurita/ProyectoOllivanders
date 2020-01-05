@@ -8,6 +8,7 @@ class GildedRose(object):
     def updateQuality(self):
         for itemClass in self.NormalItems:
             itemClass.updateQuality()
+            itemClass.__repr__()
 
     def show(self):
         for itemClass in self.NormalItems:

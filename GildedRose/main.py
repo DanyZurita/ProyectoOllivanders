@@ -30,7 +30,7 @@ def main(passedDays):
             print('\n' + '---------- DAY ' + str(day) + ' ----------')
             tienda.updateQuality()
             tienda.show()
-            tienda.__repr__()
+            
 
-
-main(1)
+if __name__ == "__main__":
+    main(3)
