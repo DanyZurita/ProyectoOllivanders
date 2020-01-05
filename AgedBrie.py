@@ -16,7 +16,7 @@ class AgedBrie(NormalItem):
             self.quality += 2
 
     def updateQuality(self):
-        self.setsellIn()
+        self.setSellIn()
         self.setQuality()
         self.checkQuality()
         self.show()

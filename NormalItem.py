@@ -9,7 +9,7 @@ class NormalItem(Item, ItemInterface):
         self.sellIn = sellIn
         self.quality = quality
 
-    def setsellIn(self):
+    def setSellIn(self):
         self.sellIn = self.sellIn - 1
 
     def checkQuality(self):
@@ -25,7 +25,7 @@ class NormalItem(Item, ItemInterface):
             self.quality -= 2
 
     def updateQuality(self):
-        self.setsellIn()
+        self.setSellIn()
         self.setQuality()
         self.checkQuality()
         self.show()
