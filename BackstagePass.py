@@ -18,9 +18,3 @@ class BackstagePass(NormalItem):
             self.quality += 3
         if self.sellIn < 0:
             self.quality = 0
-
-    def updateQuality(self):
-        self.setSellIn()
-        self.setQuality()
-        self.checkQuality()
-        self.show()
