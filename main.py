@@ -21,12 +21,16 @@ def main(passedDays):
 
     listaInventario = [agedBrie, sulfuras, sulfuras1, dexterity, elixirMongoose, conjuredManaCake, backstagePass, backstagePass1, backstagePass2]
     tienda = GildedRose(listaInventario)
+
     print('\n' + '---------- DAY 0 ----------')
     tienda.show()
-    for day in range(1, passedDays+1):
-        print('\n' + '---------- DAY ' + str(day) + ' ----------')
-        tienda.updateQuality()
-        tienda.show()
+    tienda.__repr__()
+    if passedDays != 0:
+        for day in range(1, passedDays+1):
+            print('\n' + '---------- DAY ' + str(day) + ' ----------')
+            tienda.updateQuality()
+            tienda.show()
+            tienda.__repr__()
 
 
-main(5)
+main(1)

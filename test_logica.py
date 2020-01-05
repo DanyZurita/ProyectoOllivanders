@@ -1,8 +1,8 @@
-from logica import update
+from main import main
 
 
 def test_day_0():
-    assert update(0) == [["name", "sellIn", "quality"],
+    assert main(0) == [["name", "sellIn", "quality"],
                         ["+5 Dexterity Vest", 10, 20],
                         ["Aged Brie", 2, 0],
                         ["Elixir of the Mongoose", 5, 7],
@@ -15,7 +15,7 @@ def test_day_0():
 
 
 def test_day_1():
-    assert update(1) == [["name", "sellIn", "quality"],
+    assert main(1) == [["name", "sellIn", "quality"],
                         ["+5 Dexterity Vest", 9, 19],
                         ["Aged Brie", 1, 1],
                         ["Elixir of the Mongoose", 4, 6],
@@ -28,7 +28,7 @@ def test_day_1():
 
 
 def test_day_30():
-    assert update(30) == [["name", "sellIn", "quality"],
+    assert main(30) == [["name", "sellIn", "quality"],
                         ["+5 Dexterity Vest", -20, 0],
                         ["Aged Brie", -28, 50],
                         ["Elixir of the Mongoose", -25, 0],
