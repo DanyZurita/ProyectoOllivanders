@@ -3,7 +3,7 @@ from NormalItem import NormalItem
 from AgedBrie import AgedBrie
 from Sulfuras import Sulfuras
 from Dexterity import Dexterity
-from Elexir import Elixir
+from Elixir import Elixir
 
 class GilderRose(NormalItem):
 
