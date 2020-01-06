@@ -8,14 +8,12 @@ def main(passedDays):
 
     print('\n' + '---------- DAY 0 ----------')
     tiendaGildedRose.showInventori()
-    tiendaGildedRose.__repr__(passedDays)
-    if passedDays != 0:
+    if passedDays > 0:
         for day in range(0, passedDays):
             print('\n' + '---------- DAY ' + str(day + 1) + ' ----------')
             tiendaGildedRose.updateQuality()
-            tiendaGildedRose.__repr__(passedDays)
 
 
 if __name__ == "__main__":
 
-    print(main(1))
+    print(main(3))

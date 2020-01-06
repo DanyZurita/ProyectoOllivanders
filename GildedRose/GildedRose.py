@@ -9,7 +9,6 @@ class GildedRose:
     def updateQuality(self):
         for itemClass in self.items:
             itemClass.updateQuality()
-            itemClass.__repr__()
             itemClass.show()
 
     def showInventori(self):

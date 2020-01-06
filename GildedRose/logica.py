@@ -26,4 +26,4 @@ def update(passed_days):
 
 if __name__ == "__main__":
 
-    print(update(3))
+    print(update(30)) 

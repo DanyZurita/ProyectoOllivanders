@@ -19,7 +19,7 @@ class NormalItem(Item, ItemInterface):
             self.quality = 0
 
     def setQuality(self):
-        if self.sellIn > 0:
+        if self.sellIn >= 0:
             self.quality -= 1
         else:
             self.quality -= 2
