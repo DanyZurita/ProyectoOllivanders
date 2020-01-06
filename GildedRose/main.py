@@ -1,11 +1,4 @@
-from AgedBrie import AgedBrie
-from Sulfuras import Sulfuras
-from Dexterity import Dexterity
-from Elixir import Elixir
 from GildedRose import GildedRose
-from Conjured import Conjured
-from BackstagePass import BackstagePass
-from NormalItem import NormalItem
 from createObjects import createItems
 
 def main(passedDays):
@@ -14,11 +7,12 @@ def main(passedDays):
 
     print('\n' + '---------- DAY 0 ----------')
     tiendaGildedRose.showInventori()
-    tiendaGildedRose.__repr__()
+    tiendaGildedRose.__repr__(passedDays)
     if passedDays != 0:
         for day in range(0, passedDays):
             print('\n' + '---------- DAY ' + str(day + 1) + ' ----------')
             tiendaGildedRose.updateQuality()
+            tiendaGildedRose.__repr__(passedDays)
 
 
 if __name__ == "__main__":
