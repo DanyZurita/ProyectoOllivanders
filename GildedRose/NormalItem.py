@@ -32,5 +32,11 @@ class NormalItem(Item, ItemInterface):
     def show(self):
         print(self)
 
+    def listItems(self):
+        listItems = []
+        for itemClass in self.__subclasses__():
+            listItems.append(itemClass)
+        return listItems
+
     def __repr__(self):
-        return "%s, %s, %s" % (self.name, self.sellIn, self.quality)
+        return "%s, " % (self.name) + "%d, " % (self.sellIn) + "%d" % (self.quality)
