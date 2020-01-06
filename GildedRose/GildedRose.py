@@ -29,7 +29,7 @@ class GildedRose:
                 registerDict = {}
                 registerList = []
                 for itemClass in self.items:
-                    itemClass.updateQuality()               
+                    itemClass.updateQuality()
                     registerList.append([itemClass.__repr__()])
                 registerDict["DAY " + str(day + 1)] = registerList
             return registerDict

@@ -18,7 +18,7 @@ def update(passed_days):
             registerDict = {}
             registerList = []
             for item in listaInventario:
-                item.updateQuality()               
+                item.updateQuality()
                 registerList.append([item.name, item.sellIn, item.quality])
             registerDict["DAY " + str(day + 1)] = registerList
         return registerDict

@@ -1,6 +1,7 @@
 from GildedRose import GildedRose
 from createObjects import createItems
 
+
 def main(passedDays):
     listaInventario = createItems()
     tiendaGildedRose = GildedRose(listaInventario)
