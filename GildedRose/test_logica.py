@@ -207,7 +207,14 @@ def test_day_16():
 
 def test_day_17():
     assert update(17) == {'DAY 17': [['+5 Dexterity Vest', -7, 0],
-                                     ['Aged Brie', -15, 32], ['Elixir of the Mongoose', -12, 0], ['Sulfuras, Hand of Ragnaros', 0, 80], ['Sulfuras, Hand of Ragnaros', -1, 80], ['Backstage passes to a TAFKAL80ETC concert', -2, 0], ['Backstage passes to a TAFKAL80ETC concert', -7, 0], ['Backstage passes to a TAFKAL80ETC concert', -12, 0], ['Conjured Mana Cake', -14, 0]]}
+                                     ['Aged Brie', -15, 32],
+                                     ['Elixir of the Mongoose', -12, 0],
+                                     ['Sulfuras, Hand of Ragnaros', 0, 80],
+                                     ['Sulfuras, Hand of Ragnaros', -1, 80],
+                                     ['Backstage passes to a TAFKAL80ETC concert', -2, 0],
+                                     ['Backstage passes to a TAFKAL80ETC concert', -7, 0],
+                                     ['Backstage passes to a TAFKAL80ETC concert', -12, 0],
+                                     ['Conjured Mana Cake', -14, 0]]}
 
 
 def test_day_18():
@@ -325,7 +332,7 @@ def test_day_27():
                                      ['Sulfuras, Hand of Ragnaros', 0, 80],
                                      ['Sulfuras, Hand of Ragnaros', -1, 80],
                                      ['Backstage passes to a TAFKAL80ETC concert', -12, 0],
-                                     ['Backstage passes to a TAFKAL80ETC concert', -17, 0], 
+                                     ['Backstage passes to a TAFKAL80ETC concert', -17, 0],
                                      ['Backstage passes to a TAFKAL80ETC concert', -22, 0],
                                      ['Conjured Mana Cake', -24, 0]]}
 
