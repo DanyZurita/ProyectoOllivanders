@@ -19,7 +19,8 @@ def main(passedDays):
     backstagePass1 = BackstagePass("Backstage Passes to TAFKAL80ETC concert", 10, 49)
     backstagePass2 = BackstagePass("Backstage Passes to TAFKAL80ETC concert", 5, 49)
 
-    listaInventario = [agedBrie, sulfuras, sulfuras1, dexterity, elixirMongoose, conjuredManaCake, backstagePass, backstagePass1, backstagePass2]
+    listaInventario = [agedBrie, sulfuras, sulfuras1, dexterity, 
+    elixirMongoose, conjuredManaCake, backstagePass, backstagePass1, backstagePass2]
     tienda = GildedRose(listaInventario)
 
     print('\n' + '---------- DAY 0 ----------')
@@ -30,7 +31,8 @@ def main(passedDays):
             print('\n' + '---------- DAY ' + str(day) + ' ----------')
             tienda.updateQuality()
             tienda.show()
-            
+            tienda.listItems()
+
 
 if __name__ == "__main__":
     main(3)

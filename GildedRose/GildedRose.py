@@ -13,3 +13,10 @@ class GildedRose(object):
     def show(self):
         for itemClass in self.NormalItems:
             itemClass.show()
+            itemClass.listItems()
+
+    def listItems(self):
+        listItems = []
+        for itemClass in self.NormalItems:
+            listItems.append(itemClass)
+        return listItems

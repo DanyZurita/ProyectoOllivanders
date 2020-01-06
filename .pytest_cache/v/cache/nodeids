@@ -1,5 +1,6 @@
 [
-  "test_logica.py::test_day_0",
-  "test_logica.py::test_day_1",
-  "test_logica.py::test_day_30"
+  "GildedRose/test_AgedBrie.py::test_agedBrieTwoDaysZeroQuality",
+  "GildedRose/test_logica.py::test_day_0",
+  "GildedRose/test_logica.py::test_day_1",
+  "GildedRose/test_logica.py::test_day_30"
 ]

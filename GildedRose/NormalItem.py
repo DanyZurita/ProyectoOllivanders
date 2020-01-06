@@ -34,3 +34,6 @@ class NormalItem(Item, ItemInterface):
 
     def __repr__(self):
         return "%s, %s, %s" % (self.name, self.sellIn, self.quality)
+
+    def listItems(self):
+        return [self.name, self.sellIn, self.quality]
