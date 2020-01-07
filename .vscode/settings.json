@@ -8,5 +8,6 @@
     "python.linting.pylintEnabled": false,
     "python.linting.pycodestyleEnabled": true,
     "python.linting.enabled": true,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "C:\\Users\\dajoz\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
 }
