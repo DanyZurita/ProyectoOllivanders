@@ -57,8 +57,14 @@
     <div class="page-header">
         <h1>Olivander's Shop</h1>
         <br>
-        <p>Aquí debería salir un print con el stock actualizado a dia {{days}}:</p>
-        
+        <p>Aquí debería salir un print con el stock actualizado a dia {{day}}:</p>
+        {% for key in updateText.keys() %}
+        {{ key }}
+        {% endfor %}
+        <br/>
+        {% for value in updateText.values() %}
+        {{ value }}
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
