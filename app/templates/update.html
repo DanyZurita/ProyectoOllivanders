@@ -1,15 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GildedRose Shop</title>
-</head>
-<body>
-    <h1>GILDED ROSE SHOP</h1>
-    <br>
-    <p>Aquí debería salir un print con el stock actualizado a dia {{days}}:</p>
-    {{main({{days}})}}
-</body>
-</html>
+{% extends "bootstrap/base.html" %}
+{% block title %}GILDED ROSE SHOP{% endblock %}
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+            data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">GILDED ROSE</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/home">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>GILDED ROSE SHOP</h1>
+        <br>
+        <p>Aquí debería salir un print con el stock actualizado a dia {{days}}:</p>
+        
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}GILDED ROSE SHOP{% endblock %}
+{% block body %}
+{{super()}}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+{% endblock %}
+{% block navbar %}
+{{super()}}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+            data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">GILDED ROSE</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/home">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Update
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/update/1">DAY 1</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/update/2">DAY 2</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/update/3">DAY 3</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/update/4">DAY 4</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/update/5">DAY 5</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/update/10">DAY 10</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/update/20">DAY 20</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/update/30">DAY 30</a>
+                      <div class="dropdown-divider"></div>
+                    </div>
+                  </li> 
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>GILDED ROSE SHOP</h1>
+        <br>
+        <p>Aquí debería salir un print del stock:</p>
+    </div>
+</div>
+{% endblock %}
