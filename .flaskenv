@@ -1,2 +1,2 @@
-FLASK_APP = ProyectoOllivanders.py
+FLASK_APP = GildedRose.*
 FLASK_DEBUG = 1
