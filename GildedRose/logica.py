@@ -23,8 +23,6 @@ def update(passed_days):
             registerDict["DAY " + str(day + 1)] = registerList
         return registerDict
 
-    print(update(30)) 
-
 
 if __name__ == "__main__":
 

@@ -59,11 +59,14 @@
         <br>
         <p>Aquí debería salir un print con el stock actualizado a dia {{day}}:</p>
         {% for key in updateText.keys() %}
-        {{ key }}
+            {{ key }}
         {% endfor %}
         <br/>
-        {% for value in updateText.values() %}
-        {{ value }}
+        {% for day in updateText.values() %}
+            {% for item in day %}
+                {{ item[0] }}, {{ item[1] }}, {{ item[2] }}
+                <br/>
+            {% endfor %}
         {% endfor %}
     </div>
 </div>
