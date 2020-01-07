@@ -1,2 +1,2 @@
-FLASK_APP = app.__init__
+FLASK_APP = app.routes.py
 FLASK_DEBUG = 1
