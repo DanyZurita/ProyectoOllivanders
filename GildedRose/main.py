@@ -7,7 +7,7 @@ def main(passedDays):
     tiendaGildedRose = GildedRose(listaInventario)
 
     print('\n' + '---------- DAY 0 ----------')
-    tiendaGildedRose.showInventori()
+    tiendaGildedRose.showInventory()
     if passedDays > 0:
         for day in range(0, passedDays):
             print('\n' + '---------- DAY ' + str(day + 1) + ' ----------')

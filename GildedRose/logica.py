@@ -14,7 +14,7 @@ def update(passed_days):
         registerDict["DAY 0"] = registerList
         return registerDict
     else:
-        for day in range(0, (passed_days)):
+        for day in range(0, passed_days):
             registerDict = {}
             registerList = []
             for item in listaInventario:

@@ -11,7 +11,7 @@ class GildedRose:
             itemClass.updateQuality()
             itemClass.show()
 
-    def showInventori(self):
+    def showInventory(self):
         for itemClass in self.items:
             itemClass.show()
 
