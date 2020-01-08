@@ -29,14 +29,5 @@ class NormalItem(Item, ItemInterface):
         self.setQuality()
         self.checkQuality()
 
-    def show(self):
-        print(self)
-
-    def listItems(self):
-        listItems = []
-        for itemClass in self.__subclasses__():
-            listItems.append(itemClass)
-        return listItems
-
     def __repr__(self):
         return "%s, " % (self.name) + "%d, " % (self.sellIn) + "%d" % (self.quality)
