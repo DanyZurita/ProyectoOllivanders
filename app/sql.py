@@ -15,8 +15,8 @@ class GildedRose(db.Model):
     __tablename__ = 'gildedrose'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True)
-    sellin = db.Column(db.String(64), unique=True)
-    quality = db.Column(db.String(64), unique=True)
+    sellin = db.Column(db.Integer(3))
+    quality = db.Column(db.Integer(3))
 
     def __repr__(self):
         return '<Stock: %r>' % (self.name, self.sellin, self.quality)

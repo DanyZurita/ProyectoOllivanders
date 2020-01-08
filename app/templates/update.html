@@ -59,18 +59,19 @@
         <h1>Olivander's Shop</h1>
         <br>
         <p>Aquí debería salir un print con el stock actualizado a dia {{day}}:</p>
+        
         {% if day: %}
-        print(update(day))
-        {% for key in update(day).keys() %}
-            print({{ key }})
-        {% endfor %}
-        <br/>
-        {% for day in update(day).values() %}
-            {% for item in day %}
-                print({{ item[0] }}, {{ item[1] }}, {{ item[2] }})
-                <br/>
+            print(update(day))
+            {% for key in update(day).keys() %}
+                print({{ key }})
             {% endfor %}
-        {% endfor %}
+            <br/>
+            {% for day in update(day).values() %}
+                {% for item in day %}
+                    print({{ item[0] }}, {{ item[1] }}, {{ item[2] }})
+                    <br/>
+                {% endfor %}
+            {% endfor %}
         {% endif %}
         
     </div>
