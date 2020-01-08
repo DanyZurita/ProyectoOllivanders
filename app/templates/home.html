@@ -59,9 +59,16 @@
         <br>
         <p>Aquí debería salir un print del stock:</p>
 
-        {% if True %}
-            print(show)
-        {% endif %}
+        {% for key in home.keys() %}
+            {{ key }}
+        {% endfor %}
+        <br/>
+        {% for day in home.values() %}
+            {% for item in day %}
+                {{ item[0] }}, {{ item[1] }}, {{ item[2] }}
+                <br/>
+            {% endfor %}
+        {% endfor %}
 
     </div>
 </div>

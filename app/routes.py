@@ -10,7 +10,7 @@ def index():
 
 @app.route('/home')
 def home():
-    return render_template('home.html', show=showInventory())
+    return render_template('home.html', home=logica.update(0))
 
 
 @app.route('/update')
