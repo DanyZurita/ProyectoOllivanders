@@ -1,6 +1,6 @@
 from app import app, bootstrap
 from flask import Flask, render_template
-from GildedRose import logica
+from GildedRose import *
 
 
 @app.route('/')
@@ -10,7 +10,7 @@ def index():
 
 @app.route('/home')
 def home():
-    return render_template('home.html')
+    return render_template('home.html', show=showInventory())
 
 
 @app.route('/update')
@@ -22,4 +22,4 @@ def update():
 def update_day(day):
     if not day:
         abort(404)
-    return render_template('update.html', day=day, updateText=logica.update(int(day)))
+    return render_template('update.html', day=day, update=update())

@@ -1,4 +1,3 @@
-from main import main
 from createObjects import createItems
 
 
@@ -26,4 +25,4 @@ def update(passed_days):
 
 if __name__ == "__main__":
 
-    print(update(30)) 
+    print(update(30))

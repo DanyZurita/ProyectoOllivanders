@@ -52,22 +52,27 @@
     </div>
 </div>
 {% endblock %}
+
 {% block content %}
 <div class="container">
     <div class="page-header">
         <h1>Olivander's Shop</h1>
         <br>
         <p>Aquí debería salir un print con el stock actualizado a dia {{day}}:</p>
-        {% for key in updateText.keys() %}
-            {{ key }}
+        {% if day: %}
+        print(update(day))
+        {% for key in update(day).keys() %}
+            print({{ key }})
         {% endfor %}
         <br/>
-        {% for day in updateText.values() %}
+        {% for day in update(day).values() %}
             {% for item in day %}
-                {{ item[0] }}, {{ item[1] }}, {{ item[2] }}
+                print({{ item[0] }}, {{ item[1] }}, {{ item[2] }})
                 <br/>
             {% endfor %}
         {% endfor %}
+        {% endif %}
+        
     </div>
 </div>
 {% endblock %}
