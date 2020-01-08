@@ -3,14 +3,24 @@ def readTestingFile(filePath):
     testArray = []
     acumulador = []
     for line in testFile:
-        if line.find('day') != -1:
-            testArray.append(acumulador)
+        if line.find('- day') != -1:
             acumulador = []
-        if line.find('day') and line.find('name') and line.find('sellIn') and line.find('quality') == -1:
-            item = line.rsplit(',')
+        if line == '\n':
+            testArray.append(acumulador)
+        if lineaEsItem(line):
+            # Eliminar saltos de linea y hacer splir de 2 (empieza de la derecha siempre)
+            line = line.strip()
+            item = line.rsplit(',', 2)
             acumulador.append(item)
 
     testFile.close()
     return testArray
 
-print(readTestingFile('stdout.gr'))
+
+def lineaEsItem(line):
+    if line.find('day') == -1 and line.find('sellIn') == -1 and line != '\n' and line != '':
+        return True
+    return False
+
+
+print(readTestingFile('GildedRose\stdout.gr'))
