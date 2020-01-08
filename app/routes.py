@@ -10,7 +10,7 @@ def index():
 
 @app.route('/home')
 def home():
-    return render_template('home.html', home=main.main(int(0)))
+    return render_template('home.html', stock=main.main(int(0)))
 
 
 @app.route('/update')
