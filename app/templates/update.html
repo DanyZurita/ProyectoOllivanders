@@ -61,14 +61,13 @@
         <p>Aquí debería salir un print con el stock actualizado a dia {{day}}:</p>
         
         {% if day: %}
-            print(update(day))
-            {% for key in update(day).keys() %}
-                print({{ key }})
+            {% for key in update.keys() %}
+                {{ key }}
             {% endfor %}
             <br/>
-            {% for day in update(day).values() %}
+            {% for day in update.values() %}
                 {% for item in day %}
-                    print({{ item[0] }}, {{ item[1] }}, {{ item[2] }})
+                    {{ item[0] }}, {{ item[1] }}, {{ item[2] }}
                     <br/>
                 {% endfor %}
             {% endfor %}
