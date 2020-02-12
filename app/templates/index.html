@@ -1,0 +1,58 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}GILDED ROSE SHOP{% endblock %}
+{% block head %}
+<style>  
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/08/Ollivanders_Wand_Shop%2C_Diagon_Alley_%287119189039%29.jpg");
+    background-size: cover;
+    background-color: #000000;
+}
+.absolute {
+		position: absolute;
+		width:1910px;
+		height:925px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: Georgia;
+        font-variant: small-caps;
+        font-size: 22px;
+        text-align: center;
+	}    
+.centrar
+	{
+		position: absolute;
+		/*nos posicionamos en el centro del navegador*/
+        top:50%;
+		left:50%;
+		/*determinamos una anchura*/
+		width:550px;
+		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+        margin-left:-275px;
+		/*determinamos una altura*/
+		height:150px;
+		/*indicamos que el margen superior, es la mitad de la altura*/
+        margin-top:-75px;
+        padding: 1vw;        
+        background-color: black;
+        opacity: 85%;
+        color: #FFFFFF;
+        font-family: Georgia;
+        font-variant: small-caps;
+        font-size: 22px;
+        text-align: center;
+	}
+</style> 
+{% endblock %}
+{% block body %}
+<body >
+<a class="absolute" href="/home">
+        <div class="centrar">
+          <h1> - Olivander's Shop - </h1>
+          <code>Developed by:</code>
+          <code>Daniel Arqués Toro</code>
+          <code> & </code>
+          <code>Daniel Zurita Mena</code>
+        </div>
+    </a>
+</body>
+{% endblock %}
